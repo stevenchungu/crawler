@@ -1,17 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import cheerio, { CheerioAPI } from 'cheerio';
 import * as request from 'request';
-import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
 import { JobListing } from './job-listing.entity';
 
 @Injectable()
 export class CrawlingService {
-  constructor(
-    @InjectRepository(JobListing)
-    private readonly jobListingRepository: Repository<JobListing>,
-  ) {}
-
+ 
   async crawlWebsite(personalityType?: string): Promise<JobListing[]> {
     const url = 'https://www.alljobspo.com/malawi-jobs/';
 

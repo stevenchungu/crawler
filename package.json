@@ -10,7 +10,9 @@
     "netlify:serve": "nest start --watch",
     "netlify:deploy": "npm run netlify:build && netlify deploy",
     "netlify:logs": "netlify logs",
-    "netlify:open": "netlify open"
+    "netlify:open": "netlify open",
+    "build": "nest build",
+    "start": "nest start"
   },
   "dependencies": {
     "@nestjs/common": "^9.4.3",

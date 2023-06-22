@@ -1,6 +1,5 @@
 [build]
-command = "npm run netlify:build"
 publish = "dist"
 
 [dev]
-command = "npm run netlify:serve"
+command = "netlify dev"

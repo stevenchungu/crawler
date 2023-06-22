@@ -1,16 +1,11 @@
 import { Module } from '@nestjs/common';
-import { TypeOrmModule } from '@nestjs/typeorm';
 import { CrawlingModule } from './crawling.module';
 
 @Module({
 
   imports: [ 
   CrawlingModule
- 
   ],
-
-
-
 })
 export class AppModule { }
 
